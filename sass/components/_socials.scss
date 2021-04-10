@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -10px;
+}
+.social__item {
+  margin: 10px;
+}
+.social__link {
+  padding: 12px;
+  border-radius: 50%;
+  fill: $third_color;
+  transition: fill $cubic, background-color $cubic;
+  &:hover,
+  &:focus {
+    background-color: $accent_color;
+    fill: $white_color;
+  }
+}

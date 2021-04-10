@@ -1,0 +1,40 @@
+@import './utils/variables';
+@import './base/components';
+//header
+@import './components/logo';
+@import './components/container';
+@import './components/header/header';
+@import './components/header/navigation-line';
+@import './components/header/contact-list';
+
+//INDEX
+//hero
+@import './components/main/hero/hero-bg';
+@import './components/main/hero/hero-content';
+//features
+@import './components/main/features/featyres-components';
+//dooing
+@import './components/main/doing/doing-components';
+//team
+@import './components/main/team/team-componets';
+//clients
+@import './components/main/permanent-clients/client-components';
+//footer
+@import './components/footer/footer-components';
+@import './components/footer/footer-addres';
+@import './components/footer/footer-social';
+@import './components/footer/footer-mailing';
+
+// modal-window
+@import './modal/backdrop';
+@import './modal/modal-components';
+@import './modal/modal-form';
+@import './modal/modal-btn';
+
+// PORTFOLIO
+// components
+@import './components/portfolio/portfolio-components';
+// filters
+@import './components/portfolio/portfolio_filter';
+// cards
+@import './components/portfolio/portfolio-cards';

@@ -1,0 +1,29 @@
+.backdrop {
+  opacity: 1;
+  pointer-events: initial;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  padding: 93px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity $cubic;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 208px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 221px 0;
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    &.modal-window {
+      opacity: 0;
+    }
+  }
+}

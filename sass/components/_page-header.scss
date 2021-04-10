@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  border-bottom: 1px solid $header_border_color;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+.mobile-menu-open-btn {
+  margin: 0;
+  padding: 0;
+  border: transparent;
+  background-color: $white_color;
+  transition: fill $cubic;
+  &:hover,
+  &:focus {
+    .mobile-menu-open__icon {
+      fill: $accent_color;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-menu-open__icon {
+  transition: fill $cubic;
+}

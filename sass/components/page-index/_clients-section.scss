@@ -1,0 +1,38 @@
+.clients-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.clients__item {
+  margin: 15px;
+}
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: calc((100vw - 4 * 15px) / 2);
+  border: 1px solid $third_color;
+  border-radius: 4px;
+  fill: $third_color;
+  transition: border-color $cubic, fill $cubic;
+  &:hover,
+  &:focus {
+    border-color: $accent_color;
+    fill: $accent_color;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: calc((480px - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((768px - 6 * 15px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((1200px - 12 * 30px) / 6);
+  }
+}

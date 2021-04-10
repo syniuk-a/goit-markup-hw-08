@@ -1,0 +1,114 @@
+.team__container {
+  /* max-width: auto; */
+  align-items: center;
+  margin: 0 auto;
+  padding: 94px 0;
+  background-color: rgba(245, 244, 250, 1);
+}
+.team__title {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+.card-set {
+  display: flex;
+  justify-content: center;
+}
+.team-card__thumb {
+  width: 270px;
+  height: 428px;
+  margin: 0 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+}
+/* .card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+} */
+/* .card-set__link:last-child {
+  margin-right: 15px;
+}
+.card-set__link:first-child {
+  margin-left: 15px;
+}
+
+.team-link:last-child {
+  margin-right: 0;
+} */
+.team-card__img {
+  margin-bottom: 30px;
+}
+.team-card__name {
+  margin-bottom: 10px;
+}
+.team-card__position {
+  margin-bottom: 16px;
+  font-weight: normal;
+  color: $second-text-color;
+}
+.team-social__thumb {
+  display: flex;
+  padding: 0;
+  margin: 16px 32px;
+  align-items: center;
+  justify-content: center;
+}
+.team-social__link {
+  display: flex;
+  padding: 12px;
+  display: block;
+  height: 44px;
+  width: 44px;
+  background-color: $bg-color;
+  //   margin: calc(-1 * 15px);
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+.team-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: $second-text-color;
+}
+/* .team-social__item {
+  display: block;
+  height: 44px;
+  width: 44px;
+
+  background-color: var(--bg-color);
+  margin: calc(-1 * var(--grid-margin));
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+} */
+.team-social__icon {
+  &:hover,
+  &:focus {
+    fill: $bg-color;
+  }
+}
+.team-social__link {
+  &:focus,
+  &:hover {
+    background: $accent-color;
+  }
+}

@@ -1,0 +1,100 @@
+.products-set {
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+.products__card {
+  &:not(&:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((768px - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((1200px - 6 * 15px) / 3);
+  }
+}
+.products__link {
+  color: $first_color;
+  transition: box-shadow $cubic;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    & .products__overlay {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+.products__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.products__image {
+  height: 100%;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 294px;
+    object-fit: cover;
+  }
+}
+.products__overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  height: 100%;
+  width: 100%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: $white_color;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform $cubic, opacity $cubic;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding: 0 24px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 24px;
+  }
+}
+.products__label {
+  padding: 20px 24px;
+  border: 1px solid $products_label_border_color;
+  border-top: none;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .products__card:first-child & {
+      padding-bottom: 56px;
+    }
+  }
+}
+.products__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.products__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $second_color;
+}

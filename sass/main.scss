@@ -1,0 +1,21 @@
+// Common styles
+@import './utils/varibles';
+@import './base';
+@import './utils/visually-hidden';
+@import './components/page-header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/mobile-menu';
+@import './components/socials';
+@import './components/footer';
+// page index.html
+@import './components/page-index/hero-section';
+@import './components/page-index/features-section';
+@import './components/page-index/we-do-section';
+@import './components/page-index/team-section';
+@import './components/page-index/clients-section';
+@import './components/page-index/backdrop';
+@import './components/page-index/modal-window';
+// page portfolio.html
+@import './components/page-portfolio/filters';
+@import './components/page-portfolio/products';

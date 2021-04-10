@@ -1,0 +1,35 @@
+.we-do {
+  padding-top: 47px;
+  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.we-do-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -15px;
+}
+.we-do__item {
+  margin: 15px;
+  width: calc((1200px - 6 * 15px) / 3);
+}
+.we-do__thumb {
+  position: relative;
+}
+.we-do__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.42;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white_color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

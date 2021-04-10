@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  background-color: #2f303a;
+  margin: 0;
+  padding: 0;
+  height: 252px;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  height: inherit;
+  background-color: #2f303a;
+  margin: 0 auto;
+  padding: 60px 0 60px 0;
+}
