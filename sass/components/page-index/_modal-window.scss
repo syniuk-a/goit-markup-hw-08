@@ -32,10 +32,10 @@
 .modal-form__field {
   position: relative;
   margin-bottom: 10px;
-  &:hover .modal-form__icon {
+  &:hover.modal-form__icon {
     fill: $accent_color;
   }
-  &:hover .modal-form__input {
+  &:hover.modal-form__input {
     border-color: $accent_color;
   }
 }
@@ -93,7 +93,7 @@
   border: 2px solid $first_color;
   border-radius: 2px;
   background-color: $white_color;
-  // fill: transparent;
+  fill: transparent;
   transition: border-color $cubic, fill $cubic, background-color $cubic;
   .agreement__checkbox:focus + & {
     outline: 1px solid $accent_color;
@@ -104,12 +104,12 @@
     border-color: $accent_color;
   }
 }
-// .agreement__icon {
-//   &:hover,
-//   &:focus {
-//     fill: $accent_color;
-//   }
-// }
+.agreement__icon {
+  &:hover,
+  &:focus {
+    fill: $accent_color;
+  }
+}
 .agreement__label {
   margin: 0 0 0 8px;
   padding: 0;
